@@ -2,7 +2,7 @@
 #define TEXTURE_H221
 
 #include <Windows.h>
-#include "glew.h"
+#include <GL/glew.h>
 
 GLuint DEFAULT_AMBIENT_TEXTURE;
 GLuint DEFAULT_DIFFUSE_TEXTURE;

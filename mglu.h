@@ -1,7 +1,7 @@
 #ifndef MGLU_H221
 #define MGLU_H221
 
-#include "glew.h"
+#include <GL/glew.h>
 
 #define LOCATION_UNIFORM_MATRIX_MODEL               0
 #define LOCATION_UNIFORM_MATRIX_VIEW                4

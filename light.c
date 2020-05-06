@@ -1,5 +1,5 @@
 #include "light.h"
-#include "glew.h"
+#include <GL/glew.h>
 #include "mglu.h"
 #include "mat.h"
 #include "vec.h"

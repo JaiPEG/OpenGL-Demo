@@ -1,7 +1,7 @@
 #ifndef SHADER_H221
 #define SHADER_H221
 
-#include "glew.h"
+#include <GL/glew.h>
 
 #ifdef __cplusplus
 extern "C" {

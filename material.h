@@ -1,7 +1,7 @@
 #ifndef MATERIAL_H221
 #define MATERIAL_H221
 
-#include "glew.h"
+#include <GL/glew.h>
 
 typedef struct
 {

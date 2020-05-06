@@ -1,7 +1,7 @@
 #ifndef VERTEXBUFFER_H22
 #define VERTEXBUFFER_H22
 
-#include "glew.h"
+#include <GL/glew.h>
 
 #include <stdint.h>
 

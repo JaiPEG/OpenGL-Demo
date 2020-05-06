@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <Windows.h>
 #include <WindowsX.h>
-#include "glew.h"
+#include <GL/glew.h>
 
 #include "mglm.h"
 #include "mglu.h"
