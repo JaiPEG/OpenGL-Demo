@@ -13,6 +13,7 @@ It uses custom shaders written in GLSL to achieve effects such as normal mapping
 * `D` right
 * `C` crouch
 * `SPACE` jump
+* `ESC` quit
 
 # Building
 
