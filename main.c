@@ -348,7 +348,7 @@ void create(HWND window, CREATESTRUCTW* createStruct)
                             vec4_set(cube.material->emission, 0.0f, 0.0f, 0.0f, 1.0f);
                             cube.material->shininess = 16.0f;
                             texture_create("textures\\grass.bmp", &cube.material->texture0);
-                            texture_create("textures\\clouds_NRM.bmp", &cube.material->texture1);
+                            texture_create("textures\\grass_NRM.bmp", &cube.material->texture1);
                             //cube.material->texture1 = DEFAULT_NORMAL_TEXTURE;
 
                             memset(&player, 0, sizeof(Player));
@@ -619,6 +619,7 @@ void render()
     mglmLoadIdentity(modelMatrix);
 
     // lights
+    vec4_setv(light.position, lightPos);
     light_use(&light, viewMatrix);
 
     // draw
