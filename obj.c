@@ -73,11 +73,13 @@ void obj_load(const char* fileName, Mesh* mesh_ret)
     OBJFace tmpFace;
     OBJMaterial tmpMaterial;
 
+    mesh_ret = NULL;
+
     if (fopen_s(&file, fileName, "r"))
     {
         vector_init(&vertices, sizeof(OBJVertex*));
-        vector_init(&vertices, sizeof(OBJNormal*));
-        vector_init(&vertices, sizeof(OBJFace*));
+        vector_init(&normals, sizeof(OBJNormal*));
+        vector_init(&faces, sizeof(OBJFace*));
         vector_init(&materials, sizeof(OBJMaterial*));
         
         while (fgets(line, sizeof(line), file))
@@ -111,7 +113,7 @@ void obj_load(const char* fileName, Mesh* mesh_ret)
             {
                 sscanf_s(line, "vn %f %f %f", &tmpNormal.x, &tmpNormal.y, &tmpNormal.z);
 
-                vector_push(&vertices, &tmpNormal, sizeof(OBJNormal));
+                vector_push(&normals, &tmpNormal, sizeof(OBJNormal));
             }
 
             // face
@@ -212,7 +214,8 @@ void obj_load(const char* fileName, Mesh* mesh_ret)
                 }
             }
 
-            mesh_init(mesh_ret, NULL, numVertices, numIndices, vertexBuffer, indexBuffer);
+            /* work in progress */
+            /* mesh_init(mesh_ret, NULL, numVertices, numIndices, vertexBuffer, indexBuffer); */
 
             if (vertexBuffer)
             {

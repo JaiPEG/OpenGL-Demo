@@ -1,4 +1,5 @@
 #include "object.h"
+#include "texture.h"
 
 void object_draw(const Object* object)
 {
