@@ -69,8 +69,8 @@ static void mglErrorText(char* buffer, size_t count, GLenum errorCode);
 int WINAPI WinMain(HINSTANCE instance, HINSTANCE instance_prev, PSTR cmdLine, int cmdShow)
 {
     int ret = 1;
-    const char* windowClassName = "Sample window class";
-    const char* windowName = "My window";
+    const wchar_t* windowClassName = L"Sample window class";
+    const wchar_t* windowName = L"OpenGL Demo";
     WNDCLASS windowClass;
     RECT windowRect;
     HWND window = NULL;
